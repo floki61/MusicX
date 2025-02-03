@@ -1,4 +1,4 @@
-# Music X Clone
+# MusicX Clone
 
 A modern React Native clone of Music X, offering music discovery, trending tracks, and local playback functionality.
 
