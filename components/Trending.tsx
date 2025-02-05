@@ -41,10 +41,10 @@ export default function Trending() {
 
   return (
     <View className="space-y-2 pt-8">
-      <View className="flex-row items-center justify-between">
-        <Text className="text-gray-900 text-2xl mb-4 font-bold">Trending</Text>
+      <View className="flex-row items-center justify-between px-2">
+        <Text className="text-gray-900 text-2xl font-bold">Trending</Text>
         <TouchableOpacity>
-          <Text className="text-md mb-4 font-semibold pr-2 text-orange-400">
+          <Text className="text-md font-semibold text-orange-400">
             See All
           </Text>
         </TouchableOpacity>
@@ -54,7 +54,7 @@ export default function Trending() {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        className="mb-4 pl-2"
+        className="mt-4 mb-4 pl-2"
       >
         {trendingCards.map((card) => (
           <TouchableOpacity key={card.id} className="mr-4 w-64">

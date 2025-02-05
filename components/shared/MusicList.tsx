@@ -25,8 +25,8 @@ const MusicList: React.FC<MusicListProps> = ({ title, musicItems }) => {
   }, [] as MusicItem[][]);
 
   return (
-    <View className="space-y-2 px-2 pt-2">
-      <View className="flex-row items-center justify-between mt-2">
+    <View className="space-y-2 pt-4">
+      <View className="flex-row items-center justify-between px-2">
         <Text className="text-gray-900 text-2xl font-bold">{title}</Text>
         <TouchableOpacity>
           <Text className="text-md font-semibold text-orange-400">See All</Text>
@@ -35,10 +35,10 @@ const MusicList: React.FC<MusicListProps> = ({ title, musicItems }) => {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        className="space-x-4"
+        className="space-x-4 pl-2 mt-4"
       >
         {chunkedItems.map((chunk, chunkIndex) => (
-          <View key={chunkIndex} className="mt-2 mr-4 w-[355px]">
+          <View key={chunkIndex} className="mr-4 w-[355px]">
             {chunk.map((item) => (
               <View
                 key={item.id}
